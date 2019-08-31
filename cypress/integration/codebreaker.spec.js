@@ -9,8 +9,7 @@ describe('codebreaker testing',function(){
         cy.get('#btnSetSecret').click()
 
         //Assert
-        cy.get('lblSetSecret')
-            .should('have.value','OK, let the game begin')
+        cy.contains('OK, let the game begin')
         
     })
     it('Guess',function(){
@@ -23,8 +22,7 @@ describe('codebreaker testing',function(){
         cy.get('#btnGuess').click()
 
         //Assert
-        cy.get('lblSetSecret')
-            .should('have.value','XXXX')
+        cy.contains('XXXX')
         
     })
 })
