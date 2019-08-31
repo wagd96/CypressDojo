@@ -1,0 +1,7 @@
+
+<input class=" mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="inputCodebreaker" #input>
+<button (click)="setSecret(input.value)" class="btn btn-outline-success my-2 my-sm-0" id="btnSetSecret">Set Secret</button>
+<button (click)="guess(input.value)" class="btn btn-outline-success my-2 my-sm-0" id="btnGuess">Guess</button> 
+
+<h1 id="lblSetSecret">{{codebreakerMessage.message}}</h1>
+<h1 id="lblResult">{{codebreakerMessage.result}}</h1>
